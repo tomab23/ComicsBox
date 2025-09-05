@@ -8,6 +8,7 @@ const RouterApp = () => {
     <Routes>
       {/* PUBLIC */}
       <Route path="/" element={<AuthPage />} />
+      <Route path="/register" element={<AuthPage register />} />
       <Route path="/home" element={<HomePage />} />
       {/* PRIVATE */}
       {/* ... */}
