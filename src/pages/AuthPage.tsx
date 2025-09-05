@@ -11,7 +11,7 @@ const AuthPage = (props: Props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="h-screen flex items-center justify-center">
+    <div className="h-screen flex items-center justify-center bg-gradient-to-b dark:from-gray-900 from-stone-50 dark:to-gray-950 to-white">
       <div className="w-full h-full grid lg:grid-cols-2 p-4">
         {/* IMG */}
         <div className="bg-muted hidden lg:block rounded-lg">img</div>
