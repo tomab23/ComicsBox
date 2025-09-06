@@ -17,8 +17,8 @@ const AuthPage = (props: Props) => {
         <div className="bg-muted hidden lg:block rounded-lg">img</div>
         {/* LOG PART */}
         <div className="max-w-xs m-auto w-full flex flex-col items-center">
-          <Book className="h-9 w-9" />
-          <p className="mt-4 text-xl font-bold tracking-tight">
+          <Book className="h-9 w-9 dark:stroke-yellow-400 stroke-gray-800" />
+          <p className="mt-4 text-xl font-bold tracking-tight dark:text-yellow-400 text-gray-800">
             {props.register
               ? "Register in to Comics Box"
               : "Log in to Comics Box"}
@@ -45,7 +45,7 @@ const AuthPage = (props: Props) => {
 
             <Button
               type="submit"
-              className="mt-4 w-full"
+              className="mt-4 w-full dark:bg-yellow-400 dark:hover:bg-yellow-500 bg-gray-800 hover:bg-gray-900"
               onClick={() => navigate("/home")}
             >
               Login with Email
@@ -61,14 +61,14 @@ const AuthPage = (props: Props) => {
               </p>
             )}
             {props.register ? (
-              <p className="text-sm text-center">
+              <p className="text-sm text-center dark:text-yellow-400 text-gray-900">
                 You have an account?
                 <Link to={"/"} className="ml-1 underline text-muted-foreground">
                   Log in
                 </Link>
               </p>
             ) : (
-              <p className="text-sm text-center">
+              <p className="text-sm text-center dark:text-yellow-400 text-gray-900">
                 Don&apos;t have an account?
                 <Link
                   to={"/register"}
