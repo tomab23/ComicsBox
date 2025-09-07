@@ -1,4 +1,7 @@
 import AuthPage from "@/pages/AuthPage";
+import ComicsFormPage from "@/pages/ComicsFormPage";
+import ComicsListPage from "@/pages/ComicsListPage";
+import ComicsPage from "@/pages/ComicsViewPage";
 import HomePage from "@/pages/HomePage";
 import PageNotFound from "@/pages/PageNotFound";
 import ProfilePage from "@/pages/ProfilePage";
@@ -13,6 +16,9 @@ const RouterApp = () => {
       <Route path="/home" element={<HomePage />} />
       {/* PRIVATE */}
       <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/comics-list" element={<ComicsListPage />} />
+      <Route path="/comics" element={<ComicsPage />} />
+      <Route path="/comics-form" element={<ComicsFormPage />} />
       {/* ... */}
       <Route path="/*" element={<PageNotFound />} />
       {/* TEST */}
