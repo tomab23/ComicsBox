@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-2">
           <ModeToggle />
-          <Button className="rounded-full dark:bg-yellow-400 bg-gray-800 dark:hover:bg-yellow-500 hover:bg-gray-900 size-11 max-sm:size-10" onClick={() => navigate("/profile")}>
+          <Button className="rounded-full bg-button dark:hover:bg-yellow-500 hover:bg-gray-900  size-11 max-sm:size-10" onClick={() => navigate("/profile")}>
             <User />
           </Button>
         </div>
