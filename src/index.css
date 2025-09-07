@@ -1,6 +1,21 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@layer components {
+  /* BASE PAGE CSS */
+  .setpage {
+    @apply pt-20 min-h-svh bg-gradient-to-b dark:from-gray-900 from-stone-50 dark:to-gray-950 to-white;
+  }
+  /* BASE BG BUTTON WITHOUT HOVER */
+  .bg-button {
+    @apply dark:bg-yellow-400  bg-gray-800;
+  }
+  /* CONTENU PAGE */
+  .contenu {
+    @apply max-w-screen-xl mx-8 xl:mx-auto;
+  }
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

@@ -1,20 +1,30 @@
 import Navbar from "@/components/layout/Navbar";
-import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
+import { Plus } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const navigate = useNavigate();
   return (
-    <div className="pt-20 flex min-h-svh bg-gradient-to-b dark:from-gray-900 from-stone-50 dark:to-gray-950 to-white">
+    <div className="setpage">
       <Navbar />
-      <div className="flex  justify-center gap-5 w-full mt-5">
-        <Button onClick={() => navigate("/")}>GO LOGIN</Button>
-        <ModeToggle />
-        <Button variant={"outline"} onClick={() => navigate("/404")}>
-          404
-        </Button>
+
+      <div className="contenu">
+      <p className="text-center">stats ? ex : nombre de comics / comics vo / comics vf / pourcentage de lecture sur tout les comics</p>
+
+      <div className="flex justify-between items-center mt-5">
+        <h1 className="text-2xl font-bold">Vos dernières lectures</h1>
+        <Button className="bg-button dark:hover:bg-yellow-500 hover:bg-gray-900" onClick={() => navigate("/comics-form")}> <Plus />Ajouter</Button>
       </div>
+
+      <div className="flex flex-col gap-20 mt-20">
+        <p>Lecture en cours</p>
+
+        <p>double Tableau lectures : VO | VF</p>
+      </div>
+      </div>
+
+
     </div>
   );
 };

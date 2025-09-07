@@ -45,7 +45,7 @@ const AuthPage = (props: Props) => {
 
             <Button
               type="submit"
-              className="mt-4 w-full dark:bg-yellow-400 dark:hover:bg-yellow-500 bg-gray-800 hover:bg-gray-900"
+              className="mt-4 w-full bg-button dark:hover:bg-yellow-500 hover:bg-gray-900"
               onClick={() => navigate("/home")}
             >
               Login with Email
