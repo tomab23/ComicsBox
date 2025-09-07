@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Search, User } from "lucide-react";
+import { Search } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ModeToggle } from "../mode-toggle";
+import AvatarDropdown from "../AvatarDropdown";
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -27,9 +27,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-2">
           <ModeToggle />
-          <Button className="rounded-full bg-button dark:hover:bg-yellow-500 hover:bg-gray-900  size-11 max-sm:size-10" onClick={() => navigate("/profile")}>
-            <User />
-          </Button>
+          <AvatarDropdown />
         </div>
       </div>
     </nav>
