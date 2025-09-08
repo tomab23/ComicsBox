@@ -55,7 +55,8 @@ const TestTable = ({ list }: Props) => {
           </TableBody>
         </Table>
       </div>
-      <Pagination className="mt-4">
+        {list.length > 5 &&
+              <Pagination className="mt-4">
         <PaginationContent>
           <PaginationItem>
             <PaginationPrevious href="#" />
@@ -79,6 +80,7 @@ const TestTable = ({ list }: Props) => {
           </PaginationItem>
         </PaginationContent>
       </Pagination>
+        }
     </div>
   );
 };
