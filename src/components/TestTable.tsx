@@ -27,7 +27,7 @@ const TestTable = ({ list }: Props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full">
+    <div className="w-full mb-10">
       <div className="w-full border rounded-md overflow-hidden">
         <Table>
           <TableHeader>
