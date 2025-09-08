@@ -8,13 +8,15 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+type Version = "all" | "vo" | "vf";
+
 type Props = {
   setVersionList: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const SelectVersion = ( { setVersionList } : Props) => {
   return (
-      <Select defaultValue="all">
+      <Select defaultValue="all" onValueChange={(value: Version) => setVersionList(value)}>
         <SelectTrigger>
           <SelectValue placeholder="Select a version" />
         </SelectTrigger>
