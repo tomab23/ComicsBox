@@ -17,9 +17,8 @@ import {
 } from "@/components/ui/table";
 import VersionBadge from "./VersionBadge";
 import type Test from "@/models/Test";
-import { Check, Cross, Eye, X } from "lucide-react";
+import { Check, Eye, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { Item } from "@radix-ui/react-dropdown-menu";
 
 type Props = {
   list: Test[];

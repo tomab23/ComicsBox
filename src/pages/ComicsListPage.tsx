@@ -4,8 +4,6 @@ import TestTable from "@/components/TestTable";
 import { TestList } from "@/models/TestList";
 import { useState } from "react";
 
-type Version = "all" | "vo" | "vf";
-
 const ComicsListPage = () => {
   const liste = TestList;
   const listeVo = liste.filter((item) => item.vo === true);
@@ -21,7 +19,7 @@ const ComicsListPage = () => {
       <Navbar />
       <div className="contenu">
         <div className="flex justify-between items-center mt-5">
-          <h1 className="text-2xl font-bold">Vos Comics</h1>
+          <h1 className="text-2xl font-bold">Vos Comics ({filteredList.length})</h1>
           <SelectVersion setVersionList={setVersionList} />
         </div>
         <br />

@@ -46,7 +46,7 @@ export const TestList : Test[] = [
       name: "Daredevil: Sans peur",
       page: 165,
       vo: false,
-      reading: false,
+      reading: true,
       finish: false
   },
 ]
