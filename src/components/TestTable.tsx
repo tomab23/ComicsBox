@@ -15,17 +15,18 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { TestList } from "@/models/TestList";
 import VersionBadge from "./VersionBadge";
 import type Test from "@/models/Test";
+import { Eye } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
-    list: Test[]
-}
-const TestTable = ({ list } : Props) => {
-    // const liste = TestList;
+  list: Test[];
+};
+const TestTable = ({ list }: Props) => {
+  const navigate = useNavigate();
 
-return (
+  return (
     <div className="w-full">
       <div className="w-full border rounded-md overflow-hidden">
         <Table>
@@ -43,7 +44,12 @@ return (
                 <TableCell className="pl-4">{test.id}</TableCell>
                 <TableCell className="font-medium">{test.name}</TableCell>
                 <TableCell>{test.page}</TableCell>
-                <TableCell><VersionBadge vo={test.vo} /></TableCell>
+                <TableCell className="w-16">
+                  <VersionBadge vo={test.vo} />
+                </TableCell>
+                <TableCell align="center" className="w-16">
+                  <Eye className="w-5 cursor-pointer" onClick={() => navigate("/comics")}/>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -75,6 +81,6 @@ return (
       </Pagination>
     </div>
   );
-}
+};
 
-export default TestTable
+export default TestTable;
