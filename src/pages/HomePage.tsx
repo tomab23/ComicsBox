@@ -1,10 +1,17 @@
 import Navbar from "@/components/layout/Navbar";
+import TestTable from "@/components/TestTable";
 import { Button } from "@/components/ui/button";
+import { TestList } from "@/models/TestList";
 import { Plus } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const navigate = useNavigate();
+
+  const liste = TestList;
+
+const finishList = liste.filter(item => item.finish === true);
+  
   return (
     <div className="setpage">
       <Navbar />
@@ -36,6 +43,7 @@ const HomePage = () => {
           </div>
           {/* LAST READ */}
           <p>double Tableau lectures ? : VO | VF</p>
+          <TestTable list={finishList} />
         </div>
       </div>
     </div>

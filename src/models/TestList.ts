@@ -6,34 +6,39 @@ export const TestList : Test[] = [
      name: "Batman #1",
      page: 25,
      vo: true,
-     reading: true
+     reading: true,
+     finish: false
  },
   {
       id: 2,
       name: "Duke",
       page: 165,
       vo: false,
-      reading: false
+      reading: false,
+      finish: true
   },
   {
       id: 3,
       name: "Kick-ass",
       page: 650,
       vo: false,
-      reading: true
+      reading: true,
+      finish: false
   },
   {
       id: 4,
       name: "Geiger #8",
       page: 25,
       vo: true,
-      reading: false
+      reading: false,
+      finish: true
   },
   {
       id: 5,
-      name: "Superman",
+      name: "Superman: Son of Kal-El",
       page: 200,
       vo: false,
-      reading: false
+      reading: false,
+      finish: false
   },
 ]
