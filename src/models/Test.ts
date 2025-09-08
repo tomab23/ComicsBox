@@ -4,6 +4,7 @@ export default class Test{
     vo: boolean;
     page: number;
     reading: boolean;
+    finish: boolean;
 
     constructor(
         id: number,
@@ -11,12 +12,14 @@ export default class Test{
         vo: boolean,
         page: number,
         reading: boolean,
+        finish: boolean,
     ){
         this.id = id;
         this.page = page;
         this.vo = vo;
         this.name = name;
         this.reading = reading;
+        this.finish = finish;
     }
 
 
