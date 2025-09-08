@@ -8,7 +8,11 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const SelectVersion = () => {
+type Props = {
+  setVersionList: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const SelectVersion = ( { setVersionList } : Props) => {
   return (
       <Select defaultValue="all">
         <SelectTrigger>
@@ -17,9 +21,9 @@ const SelectVersion = () => {
         <SelectContent position="popper">
           <SelectGroup>
             <SelectLabel>Versions</SelectLabel>
-            <SelectItem value="all">Tout</SelectItem>
-            <SelectItem value="vo">VO</SelectItem>
-            <SelectItem value="vf">VF</SelectItem>
+            <SelectItem value="all" onClick={() => setVersionList("all")}>Tout</SelectItem>
+            <SelectItem value="vo" onClick={() => setVersionList("vo")}>VO</SelectItem>
+            <SelectItem value="vf" onClick={() => setVersionList("vf")}>VF</SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>

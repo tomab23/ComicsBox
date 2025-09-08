@@ -19,6 +19,7 @@ import VersionBadge from "./VersionBadge";
 import type Test from "@/models/Test";
 import { Eye } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Item } from "@radix-ui/react-dropdown-menu";
 
 type Props = {
   list: Test[];
@@ -48,7 +49,7 @@ const TestTable = ({ list }: Props) => {
                   <VersionBadge vo={test.vo} />
                 </TableCell>
                 <TableCell align="center" className="w-16">
-                  <Eye className="w-5 cursor-pointer" onClick={() => navigate("/comics")}/>
+                  <Eye className="w-5 cursor-pointer" onClick={() => navigate(`/comics/${test.id}`)}/>
                 </TableCell>
               </TableRow>
             ))}
