@@ -17,7 +17,7 @@ const RouterApp = () => {
       {/* PRIVATE */}
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/comics-list" element={<ComicsListPage />} />
-      <Route path="/comics" element={<ComicsPage />} />
+      <Route path="/comics/:id" element={<ComicsPage />} />
       <Route path="/comics-form" element={<ComicsFormPage />} />
       {/* ... */}
       <Route path="/*" element={<PageNotFound />} />

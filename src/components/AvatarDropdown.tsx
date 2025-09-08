@@ -15,7 +15,7 @@ const AvatarDropdown = () => {
   const navigate = useNavigate();
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
+      <DropdownMenuTrigger asChild>
         <Button className="rounded-full bg-button dark:hover:bg-yellow-500 hover:bg-gray-900  size-11 max-sm:size-10">
           <User />
         </Button>
