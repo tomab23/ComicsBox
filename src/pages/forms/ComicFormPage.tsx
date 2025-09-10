@@ -1,6 +1,6 @@
 import Navbar from '@/components/layout/Navbar'
 
-const ComicsFormPage = () => {
+const ComicFormPage = () => {
   return (
     <div className='setpage'>
         <Navbar />
@@ -11,4 +11,4 @@ const ComicsFormPage = () => {
   )
 }
 
-export default ComicsFormPage
+export default ComicFormPage

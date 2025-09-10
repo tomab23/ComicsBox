@@ -21,14 +21,14 @@ const reading = liste.filter(item => item.reading === true);
       <div className="contenu">
         <p className="text-center">
           stats ? ex : nombre de comics / comics vo / comics vf / pourcentage de
-          lecture sur tout les comics
+          lecture sur tout les comics / collection
         </p>
         {/* TITLE & ADD BUTTON */}
         <div className="flex justify-between items-center mt-5">
           <h1 className="text-2xl font-bold">Vos dernières lectures</h1>
           <Button
             className="bg-button dark:hover:bg-yellow-500 hover:bg-gray-900"
-            onClick={() => navigate("/comics-form")}
+            onClick={() => navigate("/comic-form")}
           >
             {" "}
             <Plus />

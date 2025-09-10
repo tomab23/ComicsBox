@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import CardTest from "./CardTest";
+import CardTest from "./cards/CardTest";
 import type Test from "@/models/Test";
 
 type Props = {
@@ -14,11 +14,11 @@ type Props = {
 const CarouselReading = ({ list } : Props) => {
     
   return (
-    <Carousel
+          <Carousel
       opts={{
         align: "start",
       }}
-      className="w-full lg:max-w-3xl md:max-w-lg max-sm:max-w-62 sm:ml-14 max-sm:self-center"
+      className="w-full lg:max-w-3xl md:max-w-lg max-sm:max-w-62 md:ml-14 max-sm:self-center mt-2"
     >
       <CarouselContent>
         {list.map((test, index) => (

@@ -12,7 +12,7 @@
   }
   /* CONTENU PAGE */
   .contenu {
-    @apply max-w-screen-xl mx-8 xl:mx-auto;
+    @apply max-w-screen-xl max-sm:mx-4 mx-8 xl:mx-auto;
   }
 }
 

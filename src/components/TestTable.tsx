@@ -27,7 +27,7 @@ const TestTable = ({ list }: Props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full">
+    <div className="w-full mb-10">
       <div className="w-full border rounded-md overflow-hidden">
         <Table>
           <TableHeader>
@@ -58,7 +58,7 @@ const TestTable = ({ list }: Props) => {
                 <TableCell align="center" className="w-16">
                   <Eye
                     className="w-5 cursor-pointer"
-                    onClick={() => navigate(`/comics/${test.id}`)}
+                    onClick={() => navigate(`/comic/${test.id}`)}
                   />
                 </TableCell>
               </TableRow>
