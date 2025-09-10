@@ -4,15 +4,18 @@ import {
   CardContent,
   CardHeader,
 } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   border: string
 }
 
 const CardCollection = ({ border } : Props) => {
+  const navigate = useNavigate();
+
   return (
     <Card className={`${border} w-full shadow-none gap-0 pt-0 hover:cursor-pointer dark:hover:border-yellow-400  hover:border-gray-800`}
-    onClick={() => alert("page comics collection")}>
+    onClick={() => navigate("/collection")}>
       <CardHeader className="py-4 px-5 font-semibold">
         <p>name (3)</p>
       </CardHeader>
