@@ -8,7 +8,7 @@ import VersionBadge from "../VersionBadge";
 import { Eye, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const CardComicCollection = () => {
+const CardComicList = () => {
     const navigate = useNavigate();
 
   return (
@@ -37,4 +37,4 @@ const CardComicCollection = () => {
   )
 }
 
-export default CardComicCollection
+export default CardComicList

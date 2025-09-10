@@ -9,6 +9,7 @@ import ComicFormPage from "@/pages/forms/ComicFormPage";
 import CollectionFormPage from "@/pages/forms/CollectionFormPage";
 import CollectionsListPage from "@/pages/lists/CollectionsListPage";
 import CollectionPage from "@/pages/CollectionPage";
+import FavoritePage from "@/pages/FavoritePage";
 
 const RouterApp = () => {
   return (
@@ -23,6 +24,7 @@ const RouterApp = () => {
       <Route path="/comic/:id" element={<ComicPage />} />
       <Route path="/collections-list" element={<CollectionsListPage />} />
       <Route path="/collection" element={<CollectionPage />} />
+      <Route path="/fav" element={<FavoritePage />} />
       {/* FORM */}
       <Route path="/comic-form" element={<ComicFormPage />} />
       <Route path="/collection-form" element={<CollectionFormPage />} />

@@ -1,5 +1,5 @@
 import ButtonBack from "@/components/buttons/ButtonBack";
-import CardComicCollection from "@/components/cards/CardComicCollection";
+import CardComicCollection from "@/components/cards/CardComicList";
 import Navbar from "@/components/layout/Navbar";
 import { Button } from "@/components/ui/button";
 import { Book } from "lucide-react";

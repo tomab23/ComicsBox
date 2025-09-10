@@ -6,7 +6,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { AlertTriangleIcon, Library, LogOut, SquareLibrary, User } from "lucide-react";
+import {
+  AlertTriangleIcon,
+  Heart,
+  Library,
+  LogOut,
+  SquareLibrary,
+  User,
+} from "lucide-react";
 import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
 import { Separator } from "../ui/separator";
@@ -30,7 +37,10 @@ const AvatarDropdown = () => {
           <Library className="h-4 w-4" /> Vos comics
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => navigate("/collections-list")}>
-          <SquareLibrary   className="h-4 w-4" /> Vos collections
+          <SquareLibrary className="h-4 w-4" /> Vos collections
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => navigate("/fav")}>
+          <Heart className="h-4 w-4" /> Vos favoris
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => navigate("/404")}>
           <AlertTriangleIcon className="h-4 w-4" /> 404
