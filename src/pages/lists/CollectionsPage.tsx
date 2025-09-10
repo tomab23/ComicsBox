@@ -1,4 +1,5 @@
 import ButtonBack from "@/components/buttons/ButtonBack";
+import CardCollection from "@/components/cards/CardCollection";
 import Navbar from "@/components/layout/Navbar";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
@@ -14,7 +15,7 @@ const CollectionsPage = () => {
         <ButtonBack />
         {/* HEADER */}
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Vos collections (0)</h1>
+          <h1 className="text-2xl font-bold">Vos collections (3)</h1>
           <Button
             className="bg-button dark:hover:bg-yellow-500 hover:bg-gray-900"
             onClick={() => navigate("/collection-form")}
@@ -25,8 +26,10 @@ const CollectionsPage = () => {
           </Button>
         </div>
         {/* LIST */}
-        <div className="mt-10">
-          <p>liste de collection</p>
+        <div className="mt-10 flex flex-col gap-5">
+          <CardCollection border={""} />
+          <CardCollection border={""} />
+          <CardCollection border={""} />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import AuthPage from "@/pages/AuthPage";
-import ComicsListPage from "@/pages/ComicsListPage";
+import ComicsListPage from "@/pages/lists/ComicsListPage";
 import HomePage from "@/pages/HomePage";
 import PageNotFound from "@/pages/PageNotFound";
 import ProfilePage from "@/pages/ProfilePage";
@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import ComicPage from "@/pages/ComicViewPage";
 import ComicFormPage from "@/pages/forms/ComicFormPage";
 import CollectionFormPage from "@/pages/forms/CollectionFormPage";
-import CollectionsPage from "@/pages/CollectionsPage";
+import CollectionsPage from "@/pages/lists/CollectionsPage";
 
 const RouterApp = () => {
   return (

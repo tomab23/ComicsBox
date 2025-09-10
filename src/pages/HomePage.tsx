@@ -21,7 +21,7 @@ const reading = liste.filter(item => item.reading === true);
       <div className="contenu">
         <p className="text-center">
           stats ? ex : nombre de comics / comics vo / comics vf / pourcentage de
-          lecture sur tout les comics
+          lecture sur tout les comics / collection
         </p>
         {/* TITLE & ADD BUTTON */}
         <div className="flex justify-between items-center mt-5">
