@@ -11,7 +11,7 @@ const FavoritePage = () => {
         <p className="text-xl">Vos favoris</p>
 
         <p className="flex items-center gap-1">
-          (10 <Heart className="w-4 h-4" />)
+          (10 <Heart className="w-4 h-4 fill-accent-foreground" />)
         </p>
         </div>
 
