@@ -5,7 +5,7 @@ import { TestList } from "@/models/TestList";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const ComicsPage = () => {
+const ComicPage = () => {
   const { id } = useParams();
 
   const [test, setTest] = useState<Test | null>(null);
@@ -32,4 +32,4 @@ const ComicsPage = () => {
   );
 };
 
-export default ComicsPage;
+export default ComicPage;

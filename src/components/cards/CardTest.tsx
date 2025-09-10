@@ -5,7 +5,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import type Test from "@/models/Test";
-import VersionBadge from "./VersionBadge";
+import VersionBadge from "../VersionBadge";
 import { Eye } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -24,7 +24,7 @@ const CardTest = ({ test } : Props) => {
                     <p>{test.page} pages</p>
         <VersionBadge vo={test.vo} />
         </div>
-        <Eye className="cursor-pointer w-5" onClick={() => navigate(`/comics/${test.id}`)} />
+        <Eye className="cursor-pointer w-5" onClick={() => navigate(`/comic/${test.id}`)} />
       </CardContent>
       {/* <CardFooter>
         footer

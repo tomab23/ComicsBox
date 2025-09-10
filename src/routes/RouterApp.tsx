@@ -1,11 +1,13 @@
 import AuthPage from "@/pages/AuthPage";
-import ComicsFormPage from "@/pages/ComicsFormPage";
 import ComicsListPage from "@/pages/ComicsListPage";
-import ComicsPage from "@/pages/ComicsViewPage";
 import HomePage from "@/pages/HomePage";
 import PageNotFound from "@/pages/PageNotFound";
 import ProfilePage from "@/pages/ProfilePage";
 import { Route, Routes } from "react-router-dom";
+import ComicPage from "@/pages/ComicViewPage";
+import ComicFormPage from "@/pages/forms/ComicFormPage";
+import CollectionFormPage from "@/pages/forms/CollectionFormPage";
+import CollectionsPage from "@/pages/CollectionsPage";
 
 const RouterApp = () => {
   return (
@@ -17,8 +19,11 @@ const RouterApp = () => {
       {/* PRIVATE */}
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/comics-list" element={<ComicsListPage />} />
-      <Route path="/comics/:id" element={<ComicsPage />} />
-      <Route path="/comics-form" element={<ComicsFormPage />} />
+      <Route path="/comic/:id" element={<ComicPage />} />
+      <Route path="/collections" element={<CollectionsPage />} />
+      {/* FORM */}
+      <Route path="/comic-form" element={<ComicFormPage />} />
+      <Route path="/collection-form" element={<CollectionFormPage />} />
       {/* ... */}
       <Route path="/*" element={<PageNotFound />} />
       {/* TEST */}

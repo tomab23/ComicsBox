@@ -2,7 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ModeToggle } from "../mode-toggle";
-import AvatarDropdown from "../AvatarDropdown";
+import AvatarDropdown from "../buttons/AvatarDropdown";
 const Navbar = () => {
   const navigate = useNavigate();
 

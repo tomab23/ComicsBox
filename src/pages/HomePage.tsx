@@ -28,7 +28,7 @@ const reading = liste.filter(item => item.reading === true);
           <h1 className="text-2xl font-bold">Vos dernières lectures</h1>
           <Button
             className="bg-button dark:hover:bg-yellow-500 hover:bg-gray-900"
-            onClick={() => navigate("/comics-form")}
+            onClick={() => navigate("/comic-form")}
           >
             {" "}
             <Plus />
