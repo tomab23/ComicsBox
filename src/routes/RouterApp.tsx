@@ -4,10 +4,10 @@ import HomePage from "@/pages/HomePage";
 import PageNotFound from "@/pages/PageNotFound";
 import ProfilePage from "@/pages/ProfilePage";
 import { Route, Routes } from "react-router-dom";
-import ComicPage from "@/pages/ComicViewPage";
+import ComicPage from "@/pages/ComicPage";
 import ComicFormPage from "@/pages/forms/ComicFormPage";
 import CollectionFormPage from "@/pages/forms/CollectionFormPage";
-import CollectionsPage from "@/pages/lists/CollectionsPage";
+import CollectionsListPage from "@/pages/lists/CollectionsListPage";
 
 const RouterApp = () => {
   return (
@@ -20,7 +20,7 @@ const RouterApp = () => {
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/comics-list" element={<ComicsListPage />} />
       <Route path="/comic/:id" element={<ComicPage />} />
-      <Route path="/collections" element={<CollectionsPage />} />
+      <Route path="/collections-list" element={<CollectionsListPage />} />
       {/* FORM */}
       <Route path="/comic-form" element={<ComicFormPage />} />
       <Route path="/collection-form" element={<CollectionFormPage />} />

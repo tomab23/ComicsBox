@@ -29,7 +29,7 @@ const AvatarDropdown = () => {
         <DropdownMenuItem onClick={() => navigate("/comics-list")}>
           <Library className="h-4 w-4" /> Vos comics
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => navigate("/collections")}>
+        <DropdownMenuItem onClick={() => navigate("/collections-list")}>
           <SquareLibrary   className="h-4 w-4" /> Vos collections
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => navigate("/404")}>

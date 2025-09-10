@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const CollectionsPage = () => {
+const CollectionsListPage = () => {
     const navigate = useNavigate();
 
   return (
@@ -36,4 +36,4 @@ const CollectionsPage = () => {
   );
 };
 
-export default CollectionsPage;
+export default CollectionsListPage;

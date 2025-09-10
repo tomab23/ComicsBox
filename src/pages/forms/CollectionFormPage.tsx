@@ -7,6 +7,8 @@ const CollectionFormPage = () => {
 
       <div className="contenu">
         <p>Collection form</p>
+        <br />
+        <input type="color" />
       </div>
     </div>
   );
