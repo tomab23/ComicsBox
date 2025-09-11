@@ -11,9 +11,9 @@ const HomePage = () => {
 
   const liste = TestList;
 
-const finishList = liste.filter(item => item.finish === true);
-const reading = liste.filter(item => item.reading === true);
-  
+  const finishList = liste.filter((item) => item.finish === true);
+  const reading = liste.filter((item) => item.reading === true);
+
   return (
     <div className="setpage">
       <Navbar />
@@ -37,14 +37,18 @@ const reading = liste.filter(item => item.reading === true);
         </div>
 
         {/* READING */}
-        <div className="flex flex-col gap-20 mt-20">
+        <div className="mt-10">
           <div className="flex flex-col gap-2">
-            <h1 className="text-xl font-bold">Lecture en cours ({reading.length})</h1>
+            <h1 className="text-xl font-bold">
+              Lecture en cours ({reading.length})
+            </h1>
             <CarouselReading list={reading} />
           </div>
           {/* LAST READ */}
-          <p>double Tableau lectures ? : VO | VF</p>
-          <TestTable list={finishList} />
+          <div className="flex flex-col gap-4 mt-8">
+            <h1 className="text-xl font-bold">Dernières Lectures :</h1>
+            <TestTable list={finishList} />
+          </div>
         </div>
       </div>
     </div>
