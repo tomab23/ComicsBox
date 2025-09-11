@@ -1,8 +1,7 @@
 import ButtonBack from "@/components/buttons/ButtonBack";
-import CardComicCollection from "@/components/cards/CardComicList";
+import CardComic from "@/components/cards/CardComic";
 import Navbar from "@/components/layout/Navbar";
 import { Button } from "@/components/ui/button";
-import { Book } from "lucide-react";
 
 const CollectionPage = () => {
   return (
@@ -28,16 +27,16 @@ const CollectionPage = () => {
         <div className="mt-5">
           <p className="text-xl">Vos comics</p>
           <div className="mt-5 grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 max-md:grid-cols-2 max-sm:gap-x-2 gap-y-3">
-            <CardComicCollection />
-            <CardComicCollection />
-            <CardComicCollection />
-            <CardComicCollection />
-            <CardComicCollection />
-            <CardComicCollection />
-            <CardComicCollection />
-            <CardComicCollection />
-            <CardComicCollection />
-            <CardComicCollection />
+            <CardComic like={false} />
+            <CardComic like={false} />
+            <CardComic like={false} />
+            <CardComic like={false} />
+            <CardComic like={false} />
+            <CardComic like={false} />
+            <CardComic like={false} />
+            <CardComic like={false} />
+            <CardComic like={false} />
+            <CardComic like={false} />
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import CardTest from "./cards/CardTest";
+import CardTest from "./cards/CardComicCaroussel";
 import type Test from "@/models/Test";
 
 type Props = {
@@ -18,11 +18,11 @@ const CarouselReading = ({ list } : Props) => {
       opts={{
         align: "start",
       }}
-      className="w-full lg:max-w-3xl md:max-w-lg max-sm:max-w-62 md:ml-14 max-sm:self-center mt-2"
+      className="w-full lg:max-w-3xl sm:max-w-lg max-sm:max-w-62 md:ml-14 max-md:self-center mt-2"
     >
       <CarouselContent>
         {list.map((test, index) => (
-                      <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 max-sm:basis-1/1">
+                      <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3 max-sm:basis-1/1">
             <div className="p-1">
                 <CardTest test={test} />
             </div>

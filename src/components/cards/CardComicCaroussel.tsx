@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 type Props = {
   test: Test;
 };
-const CardTest = ({ test }: Props) => {
+const CardComicCaroussel = ({ test }: Props) => {
   const navigate = useNavigate();
   return (
     <Card className="max-w-xs w-60 shadow-none gap-0 pt-0">
@@ -42,4 +42,4 @@ const CardTest = ({ test }: Props) => {
   );
 };
 
-export default CardTest;
+export default CardComicCaroussel;
