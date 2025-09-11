@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import CardTest from "./cards/CardTest";
+import CardTest from "./cards/CardComicCaroussel";
 import type Test from "@/models/Test";
 
 type Props = {

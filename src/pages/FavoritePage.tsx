@@ -1,4 +1,4 @@
-import CardComicList from "@/components/cards/CardComicList";
+import CardComicList from "@/components/cards/CardComic";
 import Navbar from "@/components/layout/Navbar";
 import { Heart } from "lucide-react";
 
@@ -16,16 +16,16 @@ const FavoritePage = () => {
         </div>
 
         <div className="grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 max-md:grid-cols-2 max-sm:gap-x-2 gap-y-3">
-          <CardComicList />
-          <CardComicList />
-          <CardComicList />
-          <CardComicList />
-          <CardComicList />
-          <CardComicList />
-          <CardComicList />
-          <CardComicList />
-          <CardComicList />
-          <CardComicList />
+          <CardComicList like={true} />
+          <CardComicList like={true} />
+          <CardComicList like={true} />
+          <CardComicList like={true} />
+          <CardComicList like={true} />
+          <CardComicList like={true} />
+          <CardComicList like={true} />
+          <CardComicList like={true} />
+          <CardComicList like={true} />
+          <CardComicList like={true} />
         </div>
       </div>
     </div>

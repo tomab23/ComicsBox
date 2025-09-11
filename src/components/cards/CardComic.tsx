@@ -1,15 +1,14 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 // import type Test from "@/models/Test";
 import VersionBadge from "../VersionBadge";
-import { Eye, X } from "lucide-react";
+import { Eye, HeartOff, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const CardComicList = () => {
-    const navigate = useNavigate();
+type Props = {
+  like: boolean;
+};
+const CardComic = ({ like }: Props) => {
+  const navigate = useNavigate();
 
   return (
     <Card className="max-w-xs w-60 shadow-none gap-0 pt-0">
@@ -22,19 +21,27 @@ const CardComicList = () => {
           <VersionBadge vo={true} />
         </div>
         <div className="flex gap-2">
-          <X
-            className="cursor-pointer w-5 hover:scale-105 stroke-destructive"
-            onClick={() => alert("supprimer de la collection")}
-          />
+          {like ? (
+            <HeartOff
+              className="cursor-pointer w-5 hover:scale-105 stroke-destructive hover:fill-destructive"
+              onClick={() => alert("supprimer des favoris")}
+            />
+          ) : (
+            <X
+              className="cursor-pointer w-5 hover:scale-105 stroke-destructive"
+              onClick={() => alert("supprimer de la collection")}
+            />
+          )}
+
           <Eye
             className="cursor-pointer w-5 hover:scale-105"
+            onClick={() => alert("voir comic info")}
             // onClick={() => navigate(`/comic/${test.id}`)}
           />
         </div>
       </CardContent>
-
     </Card>
-  )
-}
+  );
+};
 
-export default CardComicList
+export default CardComic;
