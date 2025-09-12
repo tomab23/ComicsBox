@@ -6,8 +6,9 @@ import {
 } from "@/components/ui/card";
 import type Test from "@/models/Test";
 import VersionBadge from "../VersionBadge";
-import { Check, Eye } from "lucide-react";
+import { Eye } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import DialogValidRead from "../modals/DialogValidRead";
 
 type Props = {
   test: Test;
@@ -25,10 +26,7 @@ const CardComicCaroussel = ({ test }: Props) => {
           <VersionBadge vo={test.vo} />
         </div>
         <div className="flex gap-2">
-          <Check
-            className="cursor-pointer w-5 hover:scale-105"
-            onClick={() => alert("validation de lecture")}
-          />
+        <DialogValidRead test={test} />
           <Eye
             className="cursor-pointer w-5 hover:scale-105"
             onClick={() => navigate(`/comic/${test.id}`)}

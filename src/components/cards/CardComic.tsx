@@ -1,8 +1,9 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 // import type Test from "@/models/Test";
 import VersionBadge from "../VersionBadge";
-import { Eye, HeartOff, X } from "lucide-react";
+import { Eye } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import DialogRemoveComic from "../modals/DialogRemoveComic";
 
 type Props = {
   like: boolean;
@@ -21,18 +22,7 @@ const CardComic = ({ like }: Props) => {
           <VersionBadge vo={true} />
         </div>
         <div className="flex gap-2">
-          {like ? (
-            <HeartOff
-              className="cursor-pointer w-5 hover:scale-105 stroke-destructive hover:fill-destructive"
-              onClick={() => alert("supprimer des favoris")}
-            />
-          ) : (
-            <X
-              className="cursor-pointer w-5 hover:scale-105 stroke-destructive"
-              onClick={() => alert("supprimer de la collection")}
-            />
-          )}
-
+          <DialogRemoveComic like={like ? true : false} />
           <Eye
             className="cursor-pointer w-5 hover:scale-105"
             onClick={() => alert("voir comic info")}

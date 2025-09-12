@@ -25,7 +25,7 @@ const PageNotFound = () => {
             </p>
             <Button
               asChild
-              className="bg-button dark:text-black dark:hover:bg-yellow-500 font-bold  hover:bg-gray-900"
+              className="bg-button dark:text-black font-bold  hover:bg-gray-900 dark:hover:bg-yellow-500"
             >
               <Link to="/home">🏠 Retour à l’accueil</Link>
             </Button>
